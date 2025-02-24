@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE PORTFOLIO DESIGN</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- cdn font -->
+     <link rel="stylesheet" href="">
+     <style>
+        .header{
+            background-color: black;
+        }
+     </style>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                
+                <div class="logo">
+                    <i class="fa-solid fa-a">
+                        <div class="logo-text">RUDRANEEL MAYUR</div>
+                    </i>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li ><a href="#">HOME</a></li>
+                        <li ><a href="#">PORTFOLIO</a></li>
+                        <li ><a href="#">RESUME</a></li>
+                        <li ><a href="#">BLOG</a></li>
+                        <li ><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="#" alt="CANDIDATE PHOTO">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="">Frontend Developer</span></h5>
+                    <h1>Rudraneel Mayur</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vel incidunt fuga dignissimos quaerat impedit illum quis saepe voluptas modi reprehenderit ab magnam quos sit excepturi, sed atque, vero architecto!</p>
+                    <div class="btn-group">
+                      <a href="#" class="btn">Download CV</a>
+                      <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" ><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+       
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+
+        })
+    </script>
+</body>
+</html>
